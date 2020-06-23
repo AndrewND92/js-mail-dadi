@@ -19,5 +19,5 @@ document.getElementById("btn").addEventListener("click",function() {
 
   }else ("pareggio");
 
- document.getElementById("result").innerHTML = risultato ;
+ document.getElementById("result").innerHTML = risultato;
 });
