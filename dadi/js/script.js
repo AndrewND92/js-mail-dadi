@@ -6,18 +6,20 @@ var risultato;
 
 document.getElementById("btn").addEventListener("click",function() {
 
-  utente = Math.floor(Math.random() * (max + min)) ;
-  computer = Math.floor(Math.random() * (max + min)) ;
+  utente = Math.floor(Math.random() * 6)+1 ;
+  computer = Math.floor(Math.random() * 6)+1 ;
 
   if (utente > computer) {
     risultato = utente + " vince l'utente";
     // console.log(utente, "vince l'utente");
 
   }else if (computer > utente){
-    risultato = utente + " vince il computer";
+    risultato = computer + " vince il computer";
     // console.log(computer, "vince il computer");
 
-  }else ("pareggio");
+  }else {
+    risultato = "pareggio"
+  }
 
  document.getElementById("result").innerHTML = risultato;
 });
